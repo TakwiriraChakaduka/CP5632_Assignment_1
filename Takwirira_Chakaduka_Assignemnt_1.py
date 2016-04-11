@@ -28,11 +28,12 @@ Menu = "\nMenu:\n(L)ist all items\n(H)ire an item\n(R)eturn an item\n(A)dd new i
 
 def main():
     print(Menu)
-    choice = input(">>> ").upper()
+    choice = input(">>> ")
     while choice != 'Q':
         if choice == "L":
             loading_items()
         elif choice == "H":
+            loading_items()
             hire_items()
         elif choice == "R":
             return_items()
